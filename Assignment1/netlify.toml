@@ -1,9 +1,8 @@
 [build]
-  base    = "Assignment1/Assignment1"   # folder that has package.json and src
   command = "npm run build"
-  publish = "dist"                      # relative to base (=> Assignment1/Assignment1/dist)
+  publish = "dist"
 
-# Vite + React Router: handle refresh/deep links
+# SPA routing (React Router / Vite)
 [[redirects]]
   from = "/*"
   to   = "/index.html"
