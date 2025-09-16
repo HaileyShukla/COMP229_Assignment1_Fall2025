@@ -1,0 +1,10 @@
+[build]
+  base    = "Assignment1/Assignment1"   # folder that has package.json and src
+  command = "npm run build"
+  publish = "dist"                      # relative to base (=> Assignment1/Assignment1/dist)
+
+# Vite + React Router: handle refresh/deep links
+[[redirects]]
+  from = "/*"
+  to   = "/index.html"
+  status = 200
