@@ -1,0 +1,92 @@
+/*
+  File: index.css
+  Student’s Name: Hailey Shukla
+  StudentID: 301487045
+  Date: 2025-09-15
+  Purpose: Global styles & layout sections
+*/
+
+/*Base*/
+:root {
+  --bg: #0f172a;
+  --card: #111827;
+  --muted: #cbd5e1;
+  --text: #e5e7eb;
+  --brand: #60a5fa;
+  --accent: #34d399;
+}
+
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: var(--text);
+  background: radial-gradient(1200px 600px at 20% -10%, #1f2937, transparent),
+              linear-gradient(#0b1020, #0b1020);
+}
+
+/*Layout*/
+.app { min-height: 100%; display: grid; grid-template-rows: auto 1fr auto; }
+.container { width: min(1100px, 92%); margin: 2rem auto; }
+
+/*Navbar*/
+.nav {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0.75rem 1rem; background: rgba(17, 24, 39, 0.65); backdrop-filter: blur(10px);
+  position: sticky; top: 0; z-index: 10; border-bottom: 1px solid #1f2937;
+}
+.brand { display: inline-flex; align-items: center; gap: .6rem; text-decoration: none; }
+.brand-logo { width: 38px; height: 38px; }
+.brand-text { font-weight: 700; color: var(--text); }
+
+.nav-list { display: flex; gap: 1rem; list-style: none; padding: 0; margin: 0; }
+.nav-link { color: var(--muted); text-decoration: none; padding: .5rem .75rem; border-radius: .5rem; }
+.nav-link:hover { background: #1f2937; color: var(--text); }
+.nav-link.active { background: #1f2937; color: var(--brand); }
+
+/*Footer*/
+.footer { padding: 1.25rem 1rem; text-align: center; color: var(--muted); border-top: 1px solid #1f2937; }
+
+/*Helpers*/
+.stack { display: grid; }
+.gap { gap: 1rem; }
+.row { display: grid; gap: 1rem; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+
+.lead { color: var(--muted); font-size: 1.125rem; }
+.mission { background: #0f172a; padding: 1rem; border-radius: 0.75rem; border: 1px solid #1f2937; }
+
+.btn { display: inline-block; padding: .7rem 1rem; border-radius: .7rem; font-weight: 600;
+  color: #041826; background: var(--brand); text-decoration: none; border: none; cursor: pointer; }
+.btn.secondary { background: var(--accent); }
+.highlights {margin: .25rem 0 0; padding-left: 1.1rem; color: var(--muted);}
+.highlights li { margin: .25rem 0; }
+
+
+/*Cards / Sections*/
+.card { background: var(--card); border: 1px solid #1f2937; border-radius: 1rem; overflow: hidden; }
+.card-img { width: 100%; height: 180px; object-fit: cover; }
+.card-body { padding: 1rem; }
+
+.about { display: grid; grid-template-columns: 220px 1fr; gap: 1.25rem; align-items: start; }
+.avatar { width: 220px; height: 220px; object-fit: cover; border-radius: 1rem; border: 1px solid #1f2937; }
+
+.services { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+.services li { list-style: none; background: var(--card); padding: 1rem; border-radius: 1rem; border: 1px solid #1f2937; }
+.services-hero { width: 100%; max-height: 300px; object-fit: cover; border-radius: 1rem; border: 1px solid #1f2937;}
+
+/*Contact*/
+.contact-panel { background: var(--card); border: 1px solid #1f2937; padding: 1rem; border-radius: 1rem; }
+.form { display: grid; gap: 1rem; }
+label { display: grid; gap: .35rem; color: var(--muted); }
+input, textarea {
+  padding: .7rem .8rem; border-radius: .6rem; border: 1px solid #243148; background: #0f172a; color: var(--text);
+}
+input:focus, textarea:focus { outline: 2px solid var(--brand); border-color: var(--brand); }
+
+/*Responsive*/
+@media (max-width: 720px) {
+  .row { grid-template-columns: 1fr; }
+  .about { grid-template-columns: 1fr; }
+}
