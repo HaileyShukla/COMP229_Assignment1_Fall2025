@@ -9,19 +9,19 @@
 const projects = [
   {
     title: 'ATM Banking Application on C#',
-    image: '/public/project1.png',
+    image: '/project1.png',
     role: 'Developer',
     outcome: 'Designed and implemented a multi-class Banking System with Checking, Saving, and Visa accounts. Integrated interfaces, enums, custom exceptions, and events to handle transactions, overdrafts, and monthly reports.',
   },
   {
     title: 'Travel Application',
-    image: '/public/project2.png',
+    image: '/project2.png',
     role: 'Front-End Developer & System Designer',
     outcome: 'Built a prototype travel planning app with features for itinerary updates, expense tracking, service requests, and crime heat maps. Applied UML diagrams (use cases, CRC cards, state diagrams) to design the system and present Agile workflows.',
   },
   {
     title: 'Restaurant Website',
-    image: '/public/project3.png',
+    image: '/project3.png',
     role: 'Web Developer',
     outcome: 'Developed a six-page responsive website as part of a web development course project. Focused on layout consistency, interactivity, and accessibility for both desktop and mobile users.',
   },

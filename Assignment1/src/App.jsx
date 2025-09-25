@@ -14,6 +14,7 @@ import About from './Pages/About.jsx'
 import Projects from './Pages/Projects.jsx'
 import Services from './Pages/Services.jsx'
 import Contact from './Pages/Contact.jsx'
+import './App.css'
 
 function App() {
   // Layout wrapper with Navbar + Routes + Footer
