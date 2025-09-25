@@ -23,13 +23,6 @@ export default function Home() {
                 Lately I’ve been sharpening my <strong>React</strong>, <strong>JavaScript</strong>, and <strong> SQL</strong> skills through hands-on projects and constant iteration.
             </p>
 
-            <ul className="highlights">
-                <li>Modern React (hooks, router) + responsive UI</li>
-                <li>REST APIs and basic data modeling with SQL</li>
-                <li>Focus on accessibility, performance, and clean code</li>
-            </ul>
-
-
             {/* Calls to action */}
             <div className="row">
                 <Link to="/about" className="btn">About Me</Link>

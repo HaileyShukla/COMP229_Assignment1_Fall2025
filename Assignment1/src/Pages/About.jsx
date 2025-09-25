@@ -13,8 +13,8 @@ export default function About() {
 
       <div className="about">
         <img
-          src="./public/me.jpg"
-          alt="Head and shoulders of Your Name"
+          src="/me.jpg?v=2"
+          alt="My headshot"
           className="avatar"
         />
 
@@ -27,7 +27,7 @@ export default function About() {
           </p>
 
           {/* Resume link to a PDF in /public */}
-          <a className="btn" href="./public/resume.pdf" target="_blank" rel="noreferrer">
+          <a className="btn" href="/resume.pdf" target="_blank" rel="noreferrer">
             View My Resume (PDF)
           </a>
         </div>
